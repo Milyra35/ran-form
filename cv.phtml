@@ -8,11 +8,14 @@ $bio=$_GET['biographie'];
 
 $loisir= 
 [
-    $loisir1 => $_GET['loisir-1'],
-    $loisir2 => $_GET['loisir-2'],
-    $loisir3 => $_GET['loisir-3'],
-    $loisir4 => $_GET['loisir-4']
+    $_GET['loisir-1'],
+    $_GET['loisir-2'],
+    $_GET['loisir-3'],
+    $_GET['loisir-4']
 ];
+
+if(isset($_GET['lang']))
+    $lang=$_GET['lang'];
 
 ?>
 
@@ -82,17 +85,12 @@ $loisir=
                         {
                         ?>
                         <li>
-                            <?=$_GET['loisir-1'];?>Jeux de stratégie
+                            <?=$loisir[$i];?>
                         </li>
-                        <li>
-                            Violon
-                        </li>
-                        <li>
-                            Roller Derby
-                        </li>
-                        <li>
-                            Voile
-                        </li>
+                        <?php
+                        $i++;
+                        }
+                        ?>
                     </ul>
                 </section>
             </section>
@@ -101,6 +99,7 @@ $loisir=
                 <section>
                     <h4>Langages des programmation</h4>
                     <ul>
+                    
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
