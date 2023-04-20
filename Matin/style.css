@@ -1,0 +1,123 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat', sans-serif;
+}
+body {
+    background-color:#fefefe;
+}
+form {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr;
+}
+h1 {
+    text-transform:uppercase;
+    font-weight:400;
+    font-size:1.8em;
+    color:#24527c;
+    margin:20px 0;
+}
+#left {
+    margin:5px 20px;
+}
+#left > fieldset {
+    border:none;
+    display:flex;
+    flex-direction:column;
+    margin-top:5px;
+    margin-left:15px;
+}
+label {
+    font-weight:600;
+}
+#left fieldset {
+    margin-top:10px;
+}
+#left > fieldset input, textarea {
+    width:350px;
+    border:1px solid #bababa;
+    border-radius:2px;
+}
+#left textarea {
+    height:100px;
+}
+dl {
+    margin-top:20px;
+}
+dt {
+    color:#24527c;
+    font-size:1.2em;
+    margin-bottom:25px;
+    font-weight:500;
+}
+dd {
+    margin:5px 15px;
+    font-weight:600;
+    font-size:0.8em;
+}
+#right {
+    margin:5px 20px;
+}
+#right select {
+    margin-left:20px;
+    width:300px;
+}
+#button {
+    grid-row:2 /span 2;
+    margin:20px auto;
+    background-color:#24527c;
+    border:none;
+    color:white;
+    height:2rem;
+    width:22rem;
+    text-transform:uppercase;
+    font-weight:600;
+}
+
+/* CSS pour cv.phtml */
+main {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+}
+header {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:#24527c;
+    height:18vh;
+    color:white;
+}
+header h2 {
+    padding:10px;
+    margin-bottom:2px;
+    font-size:1.8em;
+    font-weight:600;
+}
+header p {
+    margin-bottom:5px;
+    font-size:1.4em;
+}
+section {
+    margin-left:60px;
+}
+section:first-child {
+    border-right:1px solid #bababa;
+}
+h4 {
+    font-weight:500;
+    color:#24527c;
+    margin:20px 0;
+    font-size:1.2em;
+}
+h3 {
+    font-weight:600;
+    color:#24527c;
+    font-size:0.9em;
+}
+ul {
+    margin-left:50px;
+}

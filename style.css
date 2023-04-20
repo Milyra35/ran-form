@@ -1,103 +1,182 @@
-* {
+/*
+
+rouge : #b50604;
+bleu : #24527c;
+blanc fond : #fefefe;
+blanc : white;
+gris : #bababa;
+
+*/
+
+/* CV */
+
+#cv {
+    height:100vh;
+    width:100%;
+    display : grid;
+    grid-template-rows: 0.20fr 1fr;
+    padding : 0;
     margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Montserrat', sans-serif;
-}
-body {
-    background-color:#fefefe;
-}
-form {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows:1fr;
-}
-h1 {
-    text-transform:uppercase;
-    font-weight:400;
-    font-size:1.8em;
-    color:#24527c;
-    margin:20px 0;
-}
-#left {
-    margin:5px 20px;
-}
-#left > fieldset {
-    border:none;
-    display:flex;
-    flex-direction:column;
-    margin-top:5px;
-    margin-left:15px;
-}
-label {
-    font-weight:600;
-}
-#left fieldset {
-    margin-top:10px;
-}
-#left > fieldset input, textarea {
-    width:350px;
-    border:1px solid #bababa;
-    border-radius:2px;
-}
-#left textarea {
-    height:100px;
-}
-dl {
-    margin-top:20px;
-}
-dt {
-    color:#24527c;
-    font-size:1.2em;
-    margin-bottom:25px;
-    font-weight:500;
-}
-dd {
-    margin:5px 15px;
-    font-weight:600;
-    font-size:0.8em;
-}
-#right {
-    margin:5px 20px;
-}
-#right select {
-    margin-left:20px;
-    width:300px;
-}
-#button {
-    grid-row:2 /span 2;
-    margin:20px auto;
-    background-color:#24527c;
-    border:none;
-    color:white;
-    height:2rem;
-    width:22rem;
-    text-transform:uppercase;
-    font-weight:600;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fefefe;
 }
 
-/* CSS pour cv.phtml */
-main {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows:1fr 1fr;
-}
 header {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    background-color:#24527c;
-    height:18vh;
-    color:white;
+    width:100%;
 }
-header h2 {
-    padding:10px;
-    margin-bottom:2px;
-    font-size:1.8em;
-    font-weight:600;
+
+#cv main {
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top:1em;
+    padding-bottom: 1em;
 }
-header p {
-    margin-bottom:5px;
-    font-size:1.4em;
+
+header {
+    color : white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+h1 span {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+#cv.blue header {
+    background-color: #24527c;
+}
+
+#cv.red header {
+    background-color: #b50604;
+}
+
+#left, #right {
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+#left {
+    border-right: 1px solid #bababa;
+}
+
+#cv.blue h3, #cv.blue h4 {
+    color : #24527c;
+}
+
+#cv.red h3, #cv.red h4 {
+    color : #b50604;
+}
+
+#cv h3 {
+    font-size: 1.8em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#cv h4 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+#cv.blue dt {
+    color: #24527c;
+    font-weight: 600;
+}
+
+#cv.red dt {
+    color: #b50604;
+    font-weight: 600;
+}
+
+/* FORM */
+
+#form {
+    height:100vh;
+    width:100%;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fefefe;
+}
+
+#form main {
+    height: 100%;
+    width: 100%;
+}
+
+#form main form {
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 5em;
+}
+
+#form main form section {
+    padding-left: 1.5em;
+}
+
+#form main form section div fieldset:not(#textarea) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#form main form section div fieldset:not(#textarea), #form main form section fieldset#select {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+select {
+    width:50%;
+}
+
+#form main form section div fieldset#textarea {
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+}
+
+#form main form section input[type='text'],  #form main form section input[type='email'], #form main form section textarea{
+    width: 50%;
+}
+
+#form h3 {
+    font-size: 1.8em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #24527c;
+}
+
+#form h4 {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #24527c;
+}
+
+#form fieldset {
+    border : none;
+}
+
+#form label {
+    font-weight: 600;
+}
+
+#form input[type='submit'] {
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    line-height: 2em;
+    background-color: #24527c;
+    color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border: none;
 }
