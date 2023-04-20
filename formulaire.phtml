@@ -1,0 +1,108 @@
+<?php
+
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ex form</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">  
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <form>
+            <div id="left">
+                <h1>Informations</h1>
+                <fieldset>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" required>
+                </fieldset>
+                <fieldset>
+                    <label for="firstname">Prénom</label>
+                    <input type="text" id="firstname" required>
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </fieldset>
+                <fieldset>
+                    <label for="phonenumber">Téléphone</label>
+                    <input type="tel" id="number" required>
+                </fieldset>
+                <fieldset>
+                    <label for="linkedin">LinkedIn</label>
+                    <input type="text" id="linkedin" required>
+                </fieldset>
+                <fieldset>
+                    <label for="github">GitHub</label>
+                    <input type="text" id="github" required>
+                </fieldset>
+                <fieldset>
+                    <label for="bio">Biographie</label>
+                    <textarea id="bio" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <label for="hobby">Loisir 1</label>
+                    <input type="text" id="hobby1">
+                </fieldset>
+                <fieldset>
+                    <label for="hobby">Loisir 2</label>
+                    <input type="text" id="hobby2">
+                </fieldset>
+                <fieldset>
+                    <label for="hobby">Loisir 3</label>
+                    <input type="text" id="hobby3">
+                </fieldset>
+                <fieldset>
+                    <label for="hobby">Loisir 4</label>
+                    <input type="text" id="hobby4">
+                </fieldset>
+                <dl>
+                    <dt>Langues</dt>
+                    <dd><input type="checkbox" id="langages"> Français</dd>
+                    <dd><input type="checkbox" id="langages"> Anglais</dd>
+                    <dd><input type="checkbox" id="langages"> Arabe</dd>
+                    <dd><input type="checkbox" id="langages"> Breton</dd>
+                    <dd><input type="checkbox" id="langages"> Espagnol</dd>
+                </dl>
+            </div>
+            <div id="right">
+                <h1>Compétences</h1>
+                <dl>
+                    <dt>Langages de Programmation</dt>
+                    <dd><input type="checkbox" id="program"> HTML</dd>
+                    <dd><input type="checkbox" id="program"> CSS</dd>
+                    <dd><input type="checkbox" id="program"> JavaScript</dd>
+                    <dd><input type="checkbox" id="program"> PHP</dd>
+                    <dd><input type="checkbox" id="program"> SQL</dd>
+                </dl>
+                <dl>
+                    <dt>Frameworks & Librairies</dt>
+                    <dd><input type="checkbox" id="frame"> Sass</dd>
+                    <dd><input type="checkbox" id="frame"> Bootstrap</dd>
+                    <dd><input type="checkbox" id="frame"> Symfony</dd>
+                    <dd><input type="checkbox" id="frame"> Laravel</dd>
+                </dl>
+                <dl>
+                    <dt>Logiciels</dt>
+                    <dd><input type="checkbox" id="log"> Photoshop</dd>
+                    <dd><input type="checkbox" id="log"> Illustrator</dd>
+                    <dd><input type="checkbox" id="log"> XD</dd>
+                    <dd><input type="checkbox" id="log"> Figma</dd>
+                </dl>
+                <dl>
+                    <dt>Couleur du CV</dt>
+                    <dd>Couleur</dd>
+                    <select id="color" name="color">
+                        <option value="bleu">Bleu</option>
+                        <option value="rouge">Rouge</option>
+                    </select>
+                </dl>
+            </div>
+            <input type="submit" id="button">
+        </form>
+    </body>
+</html>
